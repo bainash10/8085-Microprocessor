@@ -1,0 +1,52 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H D000h
+\par MVI B 0Ah
+\par LOOP: CMP M
+\par JNC LARGE
+\par MOV A M
+\par LARGE: INX H
+\par DCR B
+\par JNZ LOOP
+\par STA D00Ah
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| D000| 12
+2| D001| 12
+3| D002| 11
+4| D003| 11
+5| D004| 12
+6| D005| 89
+7| D006| 76
+8| D007| 72
+9| D008| 54
+10| D009| 55
+11| D00A| 89
+<End UserData>
+20
+1| 8000| 21
+2| 8001| 00
+3| 8002| D0
+4| 8003| 06
+5| 8004| 0A
+6| 8005| BE
+7| 8006| D2
+8| 8007| 0A
+9| 8008| 80
+10| 8009| 7E
+11| 800A| 23
+12| 800B| 05
+13| 800C| C2
+14| 800D| 05
+15| 800E| 80
+16| 800F| 32
+17| 8010| 0A
+18| 8011| D0
+19| 8012| 76
+<End HexData>
+
+<End Comment>

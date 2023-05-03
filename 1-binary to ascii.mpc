@@ -1,0 +1,37 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LDA C000h
+\par CPI 0Ah
+\par JC OK
+\par ADI 07h
+\par OK: ADI 30h
+\par STA C001h
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| C000| 0B
+2| C001| 42
+<End UserData>
+20
+1| 8000| 3A
+2| 8001| 00
+3| 8002| C0
+4| 8003| FE
+5| 8004| 0A
+6| 8005| DA
+7| 8006| 0A
+8| 8007| 80
+9| 8008| C6
+10| 8009| 07
+11| 800A| C6
+12| 800B| 30
+13| 800C| 32
+14| 800D| 01
+15| 800E| C0
+16| 800F| 76
+<End HexData>
+
+<End Comment>

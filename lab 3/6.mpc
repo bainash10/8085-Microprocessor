@@ -1,0 +1,45 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI B 03h
+\par MVI C 05h
+\par MOV A B
+\par SUB C
+\par JC NEGATIVE
+\par STA C000h
+\par HLT
+\par 
+\par NEGATIVE: CMA
+\par ADI 01h
+\par STA C000h
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| C000| 02
+<End UserData>
+23
+1| 8000| 06
+2| 8001| 03
+3| 8002| 0E
+4| 8003| 05
+5| 8004| 78
+6| 8005| 91
+7| 8006| DA
+8| 8007| 0D
+9| 8008| 80
+10| 8009| 32
+11| 800A| 00
+12| 800B| C0
+13| 800C| 76
+14| 800D| 2F
+15| 800E| C6
+16| 800F| 01
+17| 8010| 32
+18| 8011| 00
+19| 8012| C0
+20| 8013| 76
+<End HexData>
+
+<End Comment>

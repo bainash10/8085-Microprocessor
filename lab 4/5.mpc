@@ -1,0 +1,42 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI SP 4400h
+\par LXI B 1122h
+\par LXI D 4455h
+\par PUSH B
+\par POP D
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 1120| 00
+2| 1121| 00
+3| 1122| 00
+4| 4455| 00
+5| 4456| 00
+6| 43FC| 00
+7| 43FD| 00
+8| 43FE| 55
+9| 43FF| 44
+10| 4400| 00
+11| 4401| 00
+12| 4402| 00
+<End UserData>
+20
+1| 8000| 31
+2| 8001| 00
+3| 8002| 44
+4| 8003| 01
+5| 8004| 22
+6| 8005| 11
+7| 8006| 11
+8| 8007| 55
+9| 8008| 44
+10| 8009| D5
+11| 800A| D1
+12| 800B| 76
+<End HexData>
+
+<End Comment>

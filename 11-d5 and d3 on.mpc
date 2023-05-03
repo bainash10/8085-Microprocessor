@@ -1,0 +1,31 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H C000h
+\par LXI D D000h
+\par MVI B 0Ah
+\par LOOP: MOV A M
+\par ANI 14h
+\par CPI 14h
+\par JZ STORE
+\par INX H
+\par DCR B
+\par JNZ LOOP
+\par HLT
+\par STORE: MOV A M
+\par STAX D
+\par INX D
+\par INX H
+\par DCR B
+\par JNZ LOOP
+\par HLT
+\par \cf0 
+\par \fs20 
+\par }
+<End Codes>
+20
+<End UserData>
+20
+<End HexData>
+
+<End Comment>

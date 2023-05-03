@@ -1,0 +1,68 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LDA C000h
+\par MOV H A
+\par MVI C 08h
+\par LOOP: RRC
+\par MOV B A
+\par MOV A D
+\par RAL
+\par MOV D A
+\par MOV A B
+\par DCR C
+\par JNZ LOOP
+\par MOV A D
+\par CMP H
+\par JZ STORE
+\par MVI A 00h
+\par STA C001h
+\par HLT
+\par STORE: MVI A 01h
+\par STA C001h
+\par HLT
+\par \cf0 
+\par \fs20 
+\par }
+<End Codes>
+20
+1| C000| 99
+2| C001| 01
+<End UserData>
+1348
+1| 8000| 3A
+2| 8001| 00
+3| 8002| C0
+4| 8003| 67
+5| 8004| 0E
+6| 8005| 08
+7| 8006| 0F
+8| 8007| 47
+9| 8008| 7A
+10| 8009| 17
+11| 800A| 57
+12| 800B| 78
+13| 800C| 0D
+14| 800D| C2
+15| 800E| 06
+16| 800F| 80
+17| 8010| 7A
+18| 8011| BC
+19| 8012| CA
+20| 8013| 1B
+21| 8014| 80
+22| 8015| 3E
+23| 8016| 00
+24| 8017| 32
+25| 8018| 01
+26| 8019| C0
+27| 801A| 76
+28| 801B| 3E
+29| 801C| 01
+30| 801D| 32
+31| 801E| 01
+32| 801F| C0
+33| 8020| 76
+<End HexData>
+
+<End Comment>

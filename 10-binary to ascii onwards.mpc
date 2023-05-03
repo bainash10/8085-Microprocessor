@@ -1,0 +1,102 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H C000h
+\par LXI D D000h
+\par MVI B 0Ah
+\par LOOP: MOV A M
+\par CPI 0Ah
+\par JC BGREAT
+\par ADI 37h
+\par CPI 63h
+\par JC STORED
+\par DCR B
+\par JNZ LOOP
+\par HLT
+\par BGREAT: ADI 30h
+\par CPI 63h
+\par JC STORED
+\par DCR B
+\par JNZ LOOP
+\par HLT
+\par STORED: STAX D
+\par INX D
+\par INX H
+\par DCR B
+\par JNZ LOOP
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+24
+1| C000| 0A
+2| C001| 0B
+3| C002| 0C
+4| C003| 00
+5| C004| D0
+6| C005| E0
+7| C006| F0
+8| C007| 0A
+9| C008| A0
+10| C009| B0
+11| D000| 41
+12| D001| 42
+13| D002| 43
+14| D003| 30
+15| D004| 07
+16| D005| 17
+17| D006| 27
+18| D007| 41
+19| D008| 38
+20| D009| 39
+<End UserData>
+314
+1| 8000| 21
+2| 8001| 00
+3| 8002| C0
+4| 8003| 11
+5| 8004| 00
+6| 8005| D0
+7| 8006| 06
+8| 8007| 0A
+9| 8008| 7E
+10| 8009| FE
+11| 800A| 0A
+12| 800B| DA
+13| 800C| 1A
+14| 800D| 80
+15| 800E| C6
+16| 800F| 37
+17| 8010| FE
+18| 8011| 63
+19| 8012| DA
+20| 8013| 26
+21| 8014| 80
+22| 8015| 05
+23| 8016| C2
+24| 8017| 08
+25| 8018| 80
+26| 8019| 76
+27| 801A| C6
+28| 801B| 30
+29| 801C| FE
+30| 801D| 63
+31| 801E| DA
+32| 801F| 26
+33| 8020| 80
+34| 8021| 05
+35| 8022| C2
+36| 8023| 08
+37| 8024| 80
+38| 8025| 76
+39| 8026| 12
+40| 8027| 13
+41| 8028| 23
+42| 8029| 05
+43| 802A| C2
+44| 802B| 08
+45| 802C| 80
+46| 802D| 76
+<End HexData>
+
+<End Comment>
